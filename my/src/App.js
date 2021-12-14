@@ -2,14 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Box from './box'
 import Navbar from './Navbar'
+import './Navbar.js'
 
 function App() {
   return (
     <div className="App">
-      <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
+      <Navbar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p> 

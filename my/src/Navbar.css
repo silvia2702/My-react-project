@@ -1,0 +1,29 @@
+
+body{
+    margin: 0;
+    font-family: monospace;
+}
+#background-panel{
+    background-color: powderblue;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#background-panel > div{
+    background-color: palegreen;
+    /* margin: 50px; */
+    border-radius: 10px;
+
+}
+
+#background-panel > div:hover{
+    background-color: rgb(200, 249, 255);
+}
+
+#background-panel > div:active{
+    background-color: rgb(187, 248, 187);
+}
+
