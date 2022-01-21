@@ -1,28 +1,22 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
+import Home from './page/home'
 import './App.css';
-import Box from './box'
-import Navbar from './Navbar'
-import './Navbar.js'
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <Router>
       <Navbar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p> 
-          This is the giraffe's app
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Switch>
+        <Route path='/' exact component={ Home }/>
+        {/* <Route path='/' exact component={ AboutMe }/>
+        <Route path='/' exact component={ Shows }/>
+        <Route path='/' exact component={ Suggestions }/> */}
+      </Switch>
+    </Router>
+    </>
+   
   );
 }
 
