@@ -11,7 +11,10 @@ function navBar() {
                 About
             </div>
             <div>
-                Extra Info
+                Shows
+            </div>
+            <div>
+                Your Recommendations
             </div>
         </div>
     )

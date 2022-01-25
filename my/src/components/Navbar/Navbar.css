@@ -4,7 +4,7 @@ body{
     font-family: monospace;
 }
 #background-panel{
-    background-color: powderblue;
+    background-color: rgb(182, 238, 245)e;
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -13,17 +13,17 @@ body{
 }
 
 #background-panel > div{
-    background-color: palegreen;
+    background-color: rgb(192, 233, 250);
     /* margin: 50px; */
     border-radius: 10px;
 
 }
 
 #background-panel > div:hover{
-    background-color: rgb(200, 249, 255);
+    background-color: rgb(208, 246, 253);
 }
 
 #background-panel > div:active{
-    background-color: rgb(187, 248, 187);
+    background-color: rgb(155, 197, 245);
 }
 
