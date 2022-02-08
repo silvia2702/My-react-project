@@ -14,7 +14,7 @@ function navBar() {
                 Shows
             </div>
             <div>
-                Your Recommendations
+                Suggestions
             </div>
         </div>
     )

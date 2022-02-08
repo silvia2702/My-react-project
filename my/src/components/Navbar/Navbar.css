@@ -2,13 +2,14 @@
 body{
     margin: 0;
     font-family: monospace;
-}
+  }
+
 #background-panel{
-    background-color: rgb(182, 238, 245)e;
+    background-color: rgb(182, 238, 245);
     height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-evenly;
     top: 0;
     z-index: 99;
     position: sticky;
@@ -18,8 +19,11 @@ body{
 #background-panel > div{
     background-color: rgb(192, 233, 250);
     /* margin: 50px; */
-    border-radius: 10px;
-
+    width: 500px;
+    align-content: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #background-panel > div:hover{
