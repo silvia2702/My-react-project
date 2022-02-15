@@ -4,7 +4,7 @@ import Profile from '../components/Profile/Profile'
 function AboutMe() {
   return <div>
       <Profile/>
-  </div>;
+  </div>
 }
 
 export default AboutMe;

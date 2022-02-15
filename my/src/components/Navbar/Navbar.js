@@ -1,14 +1,19 @@
 import React from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 function navBar() {
     return (
         <div id = "background-panel">
             <div>
-                Home
+                <Link to = '/'>
+                    Home
+                </Link>
             </div>
             <div>
-                About
+                <Link to = '/profile'>
+                    About
+                </Link>
             </div>
             <div>
                 Shows
