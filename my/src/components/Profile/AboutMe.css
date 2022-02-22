@@ -1,6 +1,32 @@
 .profile{
     display: flex;
+    flex-direction: column;
     background-color:rgb(192, 233, 250);
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 1000px;
 
+}
+
+.header > div > p{
+    display: flex;
+    justify-content: center;
+    width: 150vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.header > div > h1{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+}
+
+.introduction{
+        padding: 6em 0;
+        background-image: url('https://images.unsplash.com/photo-1531558506007-fe311a2f4729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5c2NyYXBlcnxlbnwwfHwwfHw%3D&w=1000&q=80');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top: solid 1em #2f2f53;
 }
