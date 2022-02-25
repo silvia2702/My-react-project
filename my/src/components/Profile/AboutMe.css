@@ -1,30 +1,67 @@
 .profile{
     display: flex;
     flex-direction: column;
-    background-color:rgb(192, 233, 250);
+    /* background-color:rgb(192, 233, 250); */
     justify-content: center;
+    align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 1000px;
 
 }
 
-.header > div > p{
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30em;
+    margin-top: 40em;
+}
+
+.title > p{
+    font-size: 3rem;
+    color: ivory;
+}
+
+.title > h1{
+    font-size: 5rem;
+    color: ivory;
+}
+
+.header{
+    width: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header  > p{
     display: flex;
     justify-content: center;
     width: 150vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+    color: ivory;
 }
 
-.header > div > h1{
+.header > h1{
     display: flex;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80px;
+    font-size: 2.3rem;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    color: ivory;
 }
 
 .introduction{
-        padding: 6em 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        padding: 12em 0;
+        z-index: -1;
         background-image: url('https://images.unsplash.com/photo-1531558506007-fe311a2f4729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5c2NyYXBlcnxlbnwwfHwwfHw%3D&w=1000&q=80');
         background-size: cover;
         background-repeat: no-repeat;
