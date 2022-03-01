@@ -16,7 +16,9 @@ function navBar() {
                 </Link>
             </div>
             <div>
+                <Link to = '/movieReview'>
                 Shows
+                </Link>
             </div>
             <div>
                 Suggestions
