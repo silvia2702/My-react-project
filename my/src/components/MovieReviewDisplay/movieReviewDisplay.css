@@ -5,6 +5,9 @@
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    border-top: solid 1em #2f2f53;
+    margin-bottom: 20em;
+
 
 }
 
