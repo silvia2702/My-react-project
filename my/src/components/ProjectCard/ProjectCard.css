@@ -13,10 +13,12 @@
 
 
 .project-card-title{
-    background-color: white;
     margin-bottom: 1rem;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .project-card-entry > img {
     max-width: 100%;
