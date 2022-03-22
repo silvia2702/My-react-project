@@ -7,7 +7,7 @@ function ProjectCard({props}) {
         <img src = {props.src} alt = ''></img>
         <div>
           <div className = "project-card-title">
-            <h1>{props.title}  </h1>
+            <h1>{props.title}</h1>
             <h1>{props.score}/10</h1>
           </div>
             <p>
