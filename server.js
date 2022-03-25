@@ -3,24 +3,25 @@ const app = express();
 const port = process.env.PORT || 8080;
 const fs = require("fs")
 const path = require("path");
+const cors = require("cors");
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 const POST_DIR = "./my/public/posts"
+
 
 // app.use(express.static(path.join(__dirname, "/public")))
 
 app.get("/posts", async (req, res) => {
     const postDir = "./public/posts"
-    if(!fs.existsSync("./public/posts")) fs.mkdirSync(postDir)
+    if(!fs.existsSync("./public/posts")) fs.mkdirSync(postDir);
 
     const postsNames = fs.readdirSync(postDir);
     const posts = [];
-
     postsNames.forEach(postName => {
         posts.push(JSON.parse(fs.readFileSync(postDir + "/" + postName)))
     })
-    
-    console.log(postsNames);
 
     res.send(posts);
 })
