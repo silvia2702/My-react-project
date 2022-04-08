@@ -4,14 +4,16 @@ const port = process.env.PORT || 8080;
 const cors = require("cors");
 const path = require("path");
 
-const movie = require("./routes/movie");
+const db = require("./db");
+
+const movie = require("./routes/movies");
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(cors())
-
+app.use(cors());
 app.use(express.static(path.join(__dirname, "my", "build")));
+app.use("/movies", movie);
+app.get('/*', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
-app.use(movie);
 
 app.listen(port, () => console.log("listening: ", port));
