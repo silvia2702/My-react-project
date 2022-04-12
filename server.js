@@ -1,3 +1,5 @@
+if (!process.env.PASSWORD) console.log("ALERT: NO PASSWORD");
+
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
