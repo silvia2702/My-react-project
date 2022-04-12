@@ -5,20 +5,23 @@ const db = require("../db");
 const { Movie } = require("../model/Movie");
 
 
+
 router.post('/', (req, res) => {
-    const movie = new Movie({
-        title: req.body.title,
-        score: req.body.score,
-        entry: req.body.entry,
-        src: req.body.src,
-
-    })
-
+    if(req.headers.x_psw === process.env.PASSWORD) {
+        const movie = Movie({
+            title: req.body.title,
+            score: req.body.score,
+            entry: req.body.entry,
+            src: req.body.src,
     
+        })
+    
+        movie.save()
+        .then(()=> res.send(movie))
+        .catch((err)=> res.send(err))
 
-    movie.save()
-    .then(()=> res.send(movie))
-    .catch((err)=> res.send(err))
+    }
+    else res.send("ACCESS DENIED").sendStatus(410)
 
 
 })
