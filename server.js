@@ -8,7 +8,7 @@ const path = require("path");
 
 const db = require("./db");
 
-const movie = require("./routes/movies");
+// const movie = require("./routes/movies");
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

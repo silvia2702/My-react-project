@@ -4,8 +4,6 @@ const router = express.Router();
 const db = require("../db");
 const { Movie } = require("../model/Movie");
 
-
-
 router.post('/', (req, res) => {
     if(req.headers.x_psw === process.env.PASSWORD) {
         const movie = Movie({
