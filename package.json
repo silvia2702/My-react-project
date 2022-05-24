@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "heroku-postbuild": "cd f && npm install && npm run build",
+    "heroku-postbuild": "cd my && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
