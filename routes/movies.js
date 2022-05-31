@@ -1,7 +1,5 @@
 const express = require('express');
-const path = require("path");
 const router = express.Router();
-const db = require("../db");
 const { Movie } = require("../model/Movie");
 
 router.post('/', (req, res) => {
@@ -52,6 +50,5 @@ router.get('/', (req, res) => {
 //     // console.log("I received a request")
 //     res.send("hey I responded")
 // })
-
 
 module.exports = router;
