@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
+
 const server = `mongodb+srv://tv-show-review-for-funsies:${process.env.PASSWORD}@cluster0.h31pg.mongodb.net/?retryWrites=true&w=majority`;
-const database = 'seriesreview';
 
 class Database {
     constructor() {
