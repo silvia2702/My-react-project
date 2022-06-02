@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Movie } = require("./model/Movie");
+const Movie = require("../model/Movie");
 
 router.post('/', (req, res) => {
     if(req.headers.x_psw === process.env.PASSWORD) {
